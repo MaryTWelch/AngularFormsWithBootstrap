@@ -2,7 +2,7 @@
     
     <h2>User Settings</h2>
 
-    <form>
+    <form #form="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
         <input id="name" name="name" class="form-control" ngModel/>
@@ -56,4 +56,4 @@
     </form>
   </div>
 
-  <!--<h3>{{ form.value | json }}</h3>-->
+  <h3>{{ form.value | json }}</h3>
