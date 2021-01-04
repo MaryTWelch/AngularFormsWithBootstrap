@@ -20,6 +20,7 @@ export class DataService {
 
       Failure:
         response.status = 400;
+        response.body = { errorMessage: 'Some error goes here...'};
     */
 
 
