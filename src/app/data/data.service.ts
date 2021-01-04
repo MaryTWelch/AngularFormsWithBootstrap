@@ -13,9 +13,13 @@ export class DataService {
   postUserSettingsForm(userSettings: UserSettings) : Observable<any> {
     /*
       Response builder in putsreq.com:
+      Success:
         var parsedBody = JSON.parse(request.body);
         parsedBody.id = '1234';
         response.body = parsedBody;
+
+      Failure:
+        response.status = 400;
     */
 
 
