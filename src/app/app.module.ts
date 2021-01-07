@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { RatingModule } from 'ngx-bootstrap/rating';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ButtonsModule
+    ButtonsModule,
+    TimepickerModule.forRoot(),
+    RatingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

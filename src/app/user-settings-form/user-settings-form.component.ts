@@ -10,6 +10,11 @@ import { UserSettings } from '../data/user-settings';
   styleUrls: ['./user-settings-form.component.css']
 })
 export class UserSettingsFormComponent implements OnInit {
+  startDate: Date = new Date();
+  startTime: Date = new Date();
+  maxRating = 10;
+  userRating: number = 0;
+  isReadonly = false;
 
   originalUserSettings: UserSettings = {
     name: null,
